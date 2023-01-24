@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STUDY CASE 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(8, 8, 8);
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('nur4.jpg');
+  min-height: 100%;
+}
+
+/* Second image (skills) */
+.bgimg-2 {
+  background-image: url("nur39.jpg");
+  min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#HOME" class="w3-bar-item w3-button">HOME</a>
+    <a href="#ABOUT" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+    <a href="#SKILLS" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i>SKILLS</a>
+    <a href="#PASTPROJECT" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-marker"></i>PAST PROJECT</a>
+    <a href="#ACHIEVEMENTS" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-arrow-up"></i>ACHIEVEMENTS</a>
+    <a href="#CONTACT" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-phone"></i>CONTACT ME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i>WEATHER & TIME</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#ABOUT" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#SKILLS" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
+    <a href="#PASTPROJECT" class="w3-bar-item w3-button" onclick="toggleFunction()">PAST PROJECT</a>
+    <a href="#ACHIEVEMENTS" class="w3-bar-item w3-button" onclick="toggleFunction()">ACHIEVEMENTS</a>
+    <a href="#CONTACT" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT ME</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i>WEATHER & TIME</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="HOME">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">PORTFOLIO</span> :)</span>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="ABOUT">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Welcome To My Portfolio</em></p>
+  <p>In this portfolio, I will tell you a little bit about myself. You will discover about my skills, previous projects, and achievements.
+     Other than that, I also obtaining an internship opportunity in a Technology Automation Electronic based company that can contribute to
+     the company's advancement.I also want to gain real working experience that will help me improve my communication and interpersonal 
+     skills in order to be ready for a real working environment. </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>ATHIRAH MAZLAN</b></p><br>
+      <img src="nur1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="300">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>First of all let me introduce myself. My name is Nur Athirah Binti Mohd Mazlan and I am 23 years old.
+         Currently I'm studying at University Malaysia Pahang, Pekan Pahang since 2021. I am third year student of Bachelor of Technology Industrial Electronics Automation. 
+         Prior to this, I continued my education at Mara High Skills College in Pasir Mas, Kelantan between 2018 and 2020.</p><br>
+         <style>
+          .w3-button {width:150px}
+          </style>
+          <body>
+          <div class="w3-container">
+         <a href="RESUME NUR ATHIRAH.pdf" download="Resume">
+        <p><button class="w3-button w3-round-large w3-border w3-hover-light-blue">My Resume</button></p><br>
+    </div> 
+  </div>
+</div>
+
+  <!-- Skills Section -->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="SKILLS">
+    <h3 class="w3-border-bottom w3-border-black w3-padding-16">MY SKILLS </h3>
+    <p class="w3-center"><em>My skills are listed below<br></em></p><br>
+  </div> 
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Syringe Pump</div>
+        <img src="nur23.jpg" alt="nur" style="width:100%">
+        <p>Ability to fix hospital machine such as syringe pump, components that are constantly broken are LCD and keypad.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Oscilloscope</div>
+        <img src="nur16.jpg" alt="nur" style="width:105%">
+        <p>Ability to callibrate the oscilloscope and construct the electronic circuit diagram.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Power Supply</div>
+        <img src="nur10.jpg" alt="nur" style="width:97%">
+        <p>Troubleshoot the power supply because power supply doesn't give a sufficient amount of power to robot function well.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Leaking Tube</div>
+        <img src="nur7.jpg" alt="nur" style="width:99%">
+        <p>Troubleshoot the testing station because it did not function properly at the time because some of the tube was leaking.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">AutoCAD</div>
+        <img src="nur25.jpg" alt="nur" style="width:105%">
+        <p>Be able to draw in two dimensions and three dimensions using AutoCAD, a commercial computer-aided design (CAD) and drafting software application.</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cisco Packet Tracer</div>
+        <img src="nur29.jpg" alt="nur" style="width:100%">
+        <p>Capable of developing networking principles through hands-on experience as well as Cisco technology specific skills</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Soldering</div>
+        <img src="nur27.jpg" alt="nur" style="width:98%">
+        <p>Capable of using and mastering electronic equipment such as a soldering iron</p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">IndraWork</div>
+        <img src="nur28.jpg" alt="nur" style="width:109%">
+        <p>Be able to use and create programmes in a variety of languages such as structure text, function block diagram, sequential function chart, and so on</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Past Project Section -->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="PASTPROJECT">
+      <h3 class="w3-border-bottom w3-border-black w3-padding-16">PAST PROJECT</h3>
+      <p class="w3-center"><em>Below are my past project since 2021 until 2022<br> Click on the images to see details projects</em></p><br>
+    </div>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="nur12.jpg" style="width:102%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testing Station">
+      
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur19.jpg" style="width:105%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wall-E with Bluetooth & Database">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur20.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity" alt="Smart Attendance System">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur21.jpg" style="width:106%" onclick="onClick(this)" class="w3-hover-opacity" alt="3-Storey Beauty Centre">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="nur33.jpg" style="width:97%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testing or measuring are part of the handling function of checking. The capture of information and the comparison of required qualities are two major elements of testing station operation. 
+      Aside from that, we can view the outcome of the decision on whether the workpiece is acceptable or rejected. The comparison of characteristics is an important part of a measuring activity. Workpiece availability checking, identity checking, contour checking, size checking, color checking, 
+      weight checking, and orientation checking are all common types of testing.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur30.jpg" style="width:97%" onclick="onClick(this)" class="w3-hover-opacity" alt="This robot is using bluetooth to control and can be used for line follower because it has Infrared Sensors which mean this robot movement completely depends on the track. 
+      It also can avoid the object in front of their track (robotic obstacle detection systems) because of the HC-SR04 Ultrasonic Sensor that we used. Not only that, this robot also has a thermistor to measure the surrounding air and detect 4 other colour source or colour 
+      filters with peak sensitivities at wavelengths that we identify as red, green, yellow and blue because color sensor emits light from a transmitter, and the detects the light reflected back from the detection object with a receiver. It also can save the data that we 
+      get from temperature and colour sensor in cloud (Firebase).">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur14.jpg" style="width:104%" onclick="onClick(this)" class="w3-hover-opacity" alt="This system provides a platform for tracking student attendance at colleges and institutions on a daily day. 
+      This project attempts to record attendance by entering a student ID number. 
+      The manual attendance record system is inefficient, and recording and calculating each student's attendance takes extra time. 
+      Monitoring is better with a reliable attendance system.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="nur15.jpg" style="width:115%" onclick="onClick(this)" class="w3-hover-opacity" alt="To design a network for a beauty center that connects different levels of buildings and allows them to communicate with one another. 
+      One of the objectives of networking is to reduce the number of solitary users. The systems must be able to communicate with one another and supply the appropriate information. The impact of a hardware upgrade or a topology 
+      change on a network can be predicted using a simulation programme.">
+    </div>
+  </div>
+</div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+ <!-- Achievements Section -->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="ACHIEVEMENTS">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ACHIEVEMENTS</h3>
+  <p class="w3-center"><em>For my achievements while attending University Malaysia Pahang, 
+    <br> I was named to the dean's list every semester from semester 1 to semester 4</em></p>
+</div>
+
+<div class="w3-content w3-section" style="max-width:550px">
+  <img class="mySlides w3-animate-fading " src="nur34.jpg" style="width:100%;max-width:320px">
+  <img class="mySlides w3-animate-fading " src="nur35.jpg"  style="width:100%;max-width:320px">
+  <img class="mySlides w3-animate-fading " src="nur36.jpg"  style="width:100%;max-width:320px">
+  <img class="mySlides w3-animate-fading " src="nur37.jpg"  style="width:100%;max-width:320px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+<div class="w3-row-padding w3-padding-16 w3-center" id="CONTACT">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CONTACT ME</h3>
+  <p class="w3-center"><em>Fell free to contact me, I'd love your kind feedback</p>
+</div>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="nur38.png" class="w3-image w3-round" style="width:100%">
+    </div>   
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>UNIVERSITY MALAYSIA PAHANG<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +601161029266<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: athirahmazlann@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-light-blue w3-right w3-section" type="submit">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDgWaW5BeAn7-zTMjumtKjk_jakSgJwFxvKNupNgHlG9P0LQ/viewform?usp=sf_link"><i class="fa fa-paper-plane"></i>SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#HOME" class="w3-button w3-hover-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p class="w3-center"><em>Want to discover more about me? Check out the link below</p>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/athirah.mazlan.7127"><i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <a href="https://www.instagram.com/_athirahmazlann/" ><i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://twitter.com/atrhmzlnn"><i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+</body>
+</html>
